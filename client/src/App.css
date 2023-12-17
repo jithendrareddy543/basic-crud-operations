@@ -1,0 +1,22 @@
+.signup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px; /* Adjust the width as needed */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+label {
+  margin-bottom: 5px; /* Adjust the margin as needed */
+}
