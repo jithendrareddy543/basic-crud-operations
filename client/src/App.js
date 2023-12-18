@@ -8,6 +8,7 @@ import {
   Outlet,
   Link,
 } from 'react-router-dom';
+import WelcomeText from './Welcome';
 import Signup from './Signup';
 import Login from './Login';
 import Dashboard from './Dashboard';
@@ -16,9 +17,13 @@ import UserDetails from './UserDetails';
 import EditUser from './EditUSer';
 
 const App = () => {
+  const user = {
+    username: 'Jithendra Reddy', // Replace with the actual username or get it dynamically
+  };
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<WelcomeText username={user.username}/>} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} /> 
